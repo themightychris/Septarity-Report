@@ -7,16 +7,13 @@ Tested on Mac OS X Lion with Chrome 14
 # Contents
 *   `septarity-report.html` - Load this file in your browser to open the interface
 *   `rail-next_to_arrive.php` - A one-line PHP script that proxies requests to SEPTA's API
-*   `css` - Styles
-*   `img` - Images
-*   `js`
+*   `js` - folder for javascripts
     *  `depth-ext.js` - An ExtJS 4-powered alternative to the jQuery-powered depth.js file distributed with DepthJS
     *  `septarity-report.js` - Main application code
+*   `css` - folder for CSS
+*   `img` - folder for images
 
 # Notes
 *   DepthJS seems to only work on webpages loaded through http:, I wasn't able to get it working loading locally through file:
-
-
-The include and the php script that proxies requests to septa so they are available locally.
-
-depth-ext.js is a replacement the depth.js file distributed with DepthJS for using ExtJS 4 instead of jQuery
+*   I had to reload Chrome once before DepthJS worked after launching Chrome
+*   DepthJS would only work with the first web page I opened, so I set SEPTArity Report as my homepage
