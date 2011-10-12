@@ -14,6 +14,7 @@ Tested on Mac OS X Lion with Chrome 14
 *   `img` - folder for images
 
 # Notes
+*   I wasn't able to get DepthJS working in Safari
 *   DepthJS seems to only work on webpages loaded through http:, I wasn't able to get it working loading locally through file:
 *   I had to reload Chrome once before DepthJS worked after launching Chrome
 *   DepthJS would only work with the first web page I opened, so I set SEPTArity Report as my homepage
