@@ -1,7 +1,7 @@
 Tested on Mac OS X Lion with Chrome 14
 
 # Requirements
-*   DepthJS browser extension: http://depthjs.media.mit.edu/
+*   [DepthJS browser extension](http://depthjs.media.mit.edu/)
 *   Kinect sensor with power adapter (only comes with standalone Kinects)
 
 # Contents
@@ -18,3 +18,6 @@ Tested on Mac OS X Lion with Chrome 14
 *   DepthJS seems to only work on webpages loaded through http:, I wasn't able to get it working loading locally through file:
 *   I had to reload Chrome once before DepthJS worked after launching Chrome
 *   DepthJS would only work with the first web page I opened, so I set SEPTArity Report as my homepage
+
+# Links
+*   [Hackathon report with demo videos](http://technicallyphilly.com/2011/10/10/apps-for-septa-hackathon-features-new-data-sources-and-mass-transit-projects-video)
