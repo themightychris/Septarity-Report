@@ -1,0 +1,72 @@
+body{
+	background: #000;
+}
+
+h1{
+	color: #fff;
+	background: transparent url('../img/septa_logo.jpg') 10px 3px no-repeat;
+	padding: 0px 0px 0px 75px;
+	font-size: 36px;
+	height: 45px;
+}
+
+#container{
+	width: 2000px;
+	margin: 0px auto;
+}
+
+section.schedule-board{
+	width: 1980px;
+	clear: both;
+	margin: 20px 0px 50px 0px;
+	min-height: 500px;
+}
+
+article.schedule{
+	float: left;
+	width: 300px;
+	height: 140px;
+	border-radius: 10px;
+	background: #E1EBEE;
+	margin: 10px;
+	padding: 10px;
+}
+
+article.schedule table{
+	width: 240px;
+	margin: 10px auto 0px auto;
+
+}
+
+article.schedule table thead td{
+	text-align: center;
+}
+
+article.schedule table tbody td{
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+article.schedule table tbody td.train-departure-time{
+	text-align: right;
+	padding-right: 20px;
+}
+
+article.schedule h2{
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+}
+
+article.schedule h3{
+	text-align: center;
+	font-size: 24px;
+	color: #ff0000;
+}
+
+
+footer{
+	clear: both;
+}
