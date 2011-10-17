@@ -1,4 +1,4 @@
-Ext.define('DJS', {
+Ext.define('DepthJS', {
 	singleton: true
 	,mixins: {
 		observable: 'Ext.util.Observable'

@@ -90,13 +90,13 @@ Ext.define('SeptarityReport', {
 			}
 		});
 
-		DJS.on('KinectInit', this.onKinectInit, this);
-		DJS.on('Move', this.onMove, this);
-		DJS.on('HandClick', this.onHandClick, this, {buffer: 250});
-		DJS.on('SwipeLeft', this.onSwipe, this);
-		DJS.on('SwipeRight', this.onSwipe, this);
-		DJS.on('SwipeUp', this.onSwipe, this);
-		DJS.on('SwipeDown', this.onSwipe, this);
+		DepthJS.on('KinectInit', this.onKinectInit, this);
+		DepthJS.on('Move', this.onMove, this);
+		DepthJS.on('HandClick', this.onHandClick, this, {buffer: 250});
+		DepthJS.on('SwipeLeft', this.onSwipe, this);
+		DepthJS.on('SwipeRight', this.onSwipe, this);
+		DepthJS.on('SwipeUp', this.onSwipe, this);
+		DepthJS.on('SwipeDown', this.onSwipe, this);
 		
 		Ext.EventManager.onWindowResize(this.onWindowResize, this);
 		
@@ -333,8 +333,10 @@ Ext.define('SeptarityReport', {
 	
 	,back: function(dir) {
 	
-		if(!this.scheduleDetails)
+		if(!this.scheduleDetails || this.hidingDetails)
 			return;
+			
+		this.hidingDetails = true;
 
 		dir = dir || 'left';
 		
@@ -363,7 +365,7 @@ Ext.define('SeptarityReport', {
 		}
 		
 		console.info('back(%o): %o', dir, to);
-		
+
 	
 		this.scheduleDetails.el.animate({
 			duration: 500
@@ -371,6 +373,8 @@ Ext.define('SeptarityReport', {
 			,callback: function() {
 				this.scheduleDetails.destroy();
 				this.scheduleDetails = null;
+				
+				this.hidingDetails = false;
 			}
 			,scope: this
 		});
