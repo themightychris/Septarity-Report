@@ -1,0 +1,74 @@
+@import "compass/reset";
+@import "compass";
+
+$screenX: 2560px;
+$screenY: 1440px;
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background: #000;
+	font-family: "Myriad Pro", "Helvetica" helvetica, arial, sans-serif;
+	font-weight: bold;
+}
+
+#container{
+	min-height: 100%;
+	margin: auto;
+}
+
+aside.railWheel{
+ 	position: relative;
+	z-index: 1;
+	float: left;
+	width: 20%;
+	
+ .priceIsRight{
+	 	position: absolute;
+	 	top: 45%;
+	 	left: -20px;
+	 	height: 7%;
+	 	width: 100%;
+	 	opacity: .3;
+	 	z-index: 100;
+	 	background: #999;
+	 	border: #555 10px solid;
+ }
+	 
+	.inner{
+	//	min-height: 100%;
+		height: $screenY;
+		overflow-y: scroll;
+	 	@include background-image(linear-gradient(#000 -20%, #fff 40%, #fff 60%, #000 120%)); 
+	 
+		ul{
+			li{
+				font-size: 42px;
+				padding: 30px 20px;
+				color: #000;
+			}
+		}
+ 	}
+}
+
+#trainInfo{
+	float: left;
+	z-index: 200;
+	height: $screenY;
+	width: 80%;
+	
+	header{
+		@include background-image(linear-gradient(#000 25%, #666));
+	height: 15%;
+	
+		h1{
+			color: #fff;
+			font-size: 82px;	
+			margin: 40px;
+		}
+	
+	}
+}
